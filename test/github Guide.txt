@@ -1,0 +1,54 @@
+1. Créer un compte GitHub : Si vous n'avez pas déjà de compte GitHub, rendez-vous sur https://github.com et inscrivez-vous en fournissant les informations requises.
+
+2. Se connecter à GitHub : Connectez-vous à votre compte GitHub en utilisant votre nom d'utilisateur et votre mot de passe.
+
+3. Créer un dépôt (repository) :
+
+a. Cliquez sur le bouton "New" (Nouveau) en haut à droite de la page d'accueil de GitHub.
+
+b. Remplissez les informations nécessaires pour créer un nouveau dépôt, comme le nom, la description, la visibilité (public ou privé), le fichier README (optionnel), etc.
+
+c. Cliquez sur "Create repository" (Créer le dépôt) pour finaliser la création du dépôt.
+
+4. Générer un token d'accès personnel (Personal Access Token) : Les tokens d'accès sont utilisés pour authentifier votre accès à GitHub de manière sécurisée. Pour créer un token d'accès :
+
+a. Cliquez sur votre photo de profil en haut à droite de la page GitHub.
+
+b. Sélectionnez "Settings" (Paramètres) dans le menu déroulant.
+
+c. Dans le menu latéral gauche, cliquez sur "Developer settings" (Paramètres du développeur).
+
+d. Sélectionnez "Personal access tokens" (Tokens d'accès personnels) dans le menu. (Classic)
+
+e. Cliquez sur "Generate token" (Générer un token).(Classic)
+
+f. Remplissez la description du token pour vous aider à vous rappeler son utilité.
+
+g. Configurez les autorisations appropriées pour le token. Vous pouvez limiter les autorisations en fonction de vos besoins.
+
+h. Cliquez sur "Generate token" (Générer le token).
+
+i. Copiez le token généré et gardez-le en lieu sûr, car il ne sera affiché qu'une seule fois.
+
+5. Utiliser le token d'accès personnel : Une fois que vous avez votre token, vous pouvez l'utiliser pour vous authentifier auprès de GitHub lors de l'utilisation des commandes Git. 
+
+6. Cloner le dépôt : Clonez le dépôt sur votre ordinateur en utilisant la commande git clone et l'URL du dépôt :
+Code:	
+	git clone https://github.com/votre_nom_utilisateur/votre_depot.git
+
+7. Travailler sur le dépôt : Vous pouvez maintenant travailler sur le dépôt localement en apportant des modifications.
+
+8. Ajouter les modifications à la zone de préparation : Utilisez la commande git add pour ajouter vos modifications à la zone de préparation (staging area) :
+Code:
+	git add nom_du_fichier_modifié
+Vous pouvez également ajouter toutes les modifications en utilisant la commande:
+Code:
+ 	git add . 
+pour ajouter tous les fichiers modifiés.
+
+8. Valider les modifications : Validez les modifications en utilisant la commande git commit avec un message descriptif :
+Code:
+	git commit -m "Ajout de nouvelles fonctionnalités"
+9. Pousser les modifications : Envoyez vos modifications vers le dépôt distant sur GitHub en utilisant la commande git push :
+Code:
+	git push
